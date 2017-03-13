@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C1C3E</color>
+    <color name="colorPrimaryDark">#1C1C3E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_30">#88000000</color>
+
+    <color name="app_icon_main_color">#2EB6D6</color>
+    <color name="app_icon_main_color_transparent">#aa2EB6D6</color>
+
+</resources>

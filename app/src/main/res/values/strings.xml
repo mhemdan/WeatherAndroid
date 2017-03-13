@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="app_slogan">Where Weather is a Pleasure</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_no_result_search">No Result</string>
+    <string name="app_edit_locations">Edit Locations</string>
+    <string name="app_celsius">Celsius &#032; &#032;</string>
+    <string name="app_five_days">5 Days</string>
+    <string name="app_eight_days">8 Days</string>
+
+    <string name="app_tutorial_pull_to_refresh_title">Pull Down Here</string>
+    <string name="app_tutorial_pull_to_refresh_message">Pull your screen down to refresh Weather!</string>
+
+    <string name="app_tutorial_add_location_title">Add Location From Here</string>
+    <string name="app_tutorial_add_location_message">Click here to add locations!</string>
+
+    <string name="app_tutorial_swipe_to_remove_title">Swipe To Left Here</string>
+    <string name="app_tutorial_swipe_to_remove_message">Swipe cell to left to be able to remove City!</string>
+    <string name="app_error_no_internet_connectivity_message">Check Your Internet Connection</string>
+</resources>

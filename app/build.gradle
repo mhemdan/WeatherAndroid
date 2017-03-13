@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+//apply plugin: 'com.google.gms.google-services'
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "mohammed.hemdan.weather"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 22
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    // views binding library
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    // views binding library annotation processor
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    // network requests library
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.google.code.gson:gson:2.5'
+    // json google library for parsing
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    // network json converter library
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    // material search view
+    compile 'io.paperdb:paperdb:2.0'
+    // noSQL database library
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    // swip layout library
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    // pull to refresh library
+    compile 'uk.co.samuelwall:material-tap-target-prompt:1.8.0'
+    // tutorial showcase library
+    compile 'com.zplesac:connectionbuddy:2.0.0-beta1'
+    // connection listener
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
+        transitive = true;
+    }
+    compile 'ru.egslava:blurredview:1.0'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile project(':stepocrash')
+}
+apply plugin: 'com.google.gms.google-services'
+

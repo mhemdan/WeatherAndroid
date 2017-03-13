@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_30"
+    android:gravity="center"
+    >
+<TextView
+    android:id="@+id/day_name"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:textSize="@dimen/text_size_medium"
+    android:textColor="@android:color/white"
+    android:layout_weight="1.2"/>
+    <ImageView
+        android:id="@+id/day_weather_icon"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_weight="0.5"
+        android:src="@drawable/not_available"/>
+    <TextView
+        android:id="@+id/max_temp"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@android:color/white"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.8"/>
+    <TextView
+        android:id="@+id/min_temp"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/app_icon_main_color"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="28.56 *C"
+        android:layout_weight="0.8"/>
+</LinearLayout>

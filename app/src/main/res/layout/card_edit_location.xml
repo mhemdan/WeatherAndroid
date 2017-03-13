@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10"
+    card_view:cardBackgroundColor="#90000000"
+    card_view:cardCornerRadius="4dp">
+
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipe_layout"
+android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="@dimen/dimen_10"
+    >
+<!-- Bottom View Start-->
+<LinearLayout
+    android:id="@+id/bottom_wrapper"
+    android:layout_width="@dimen/dimen_30"
+    android:weightSum="1"
+    android:layout_gravity="right"
+    android:gravity="center"
+    android:layout_height="@dimen/dimen_30"
+    android:orientation="horizontal">
+    <!--What you want to show-->
+    <ImageView
+        android:id="@+id/trash"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:src="@drawable/trash"/>
+</LinearLayout>
+<!-- Bottom View End-->
+
+<!-- Surface View Start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_details_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@android:color/white"></View>
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:textSize="@dimen/text_size_small"/>
+
+</LinearLayout>
+<!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>
+    </android.support.v7.widget.CardView>
